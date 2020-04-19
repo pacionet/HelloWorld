@@ -16,11 +16,5 @@ ARG JAR_FILE=target/demo-docker-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 ADD ${JAR_FILE} demo-docker-0.0.1-SNAPSHOT.jar
 
-ENV JAVA_OPTIONS -Xmx128m
-
-ENV JAVA_APP_JAR demo-docker-0.0.1-SNAPSHOT.jar
-
-ENV JAVA_MAIN_CLASS com.example.demodocker.DemoApplication
-
 # Run the jar file
 ENTRYPOINT ["java","-jar","/demo-docker-0.0.1-SNAPSHOT.jar"]
