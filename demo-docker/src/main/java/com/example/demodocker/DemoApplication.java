@@ -1,16 +1,14 @@
 package com.example.demodocker;
 
-/*
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-*/
 
-//@SpringBootApplication
+@SpringBootApplication
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(DemoApplication.class, args);
-		System.out.println("HELLO WORLD!");
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
