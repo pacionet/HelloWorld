@@ -14,8 +14,8 @@ public class DemoController
     public List<Customer> findAll()
     {
         List<Customer> customerList = new ArrayList<Customer>();
-        customerList.add(new Customer(1, "frank"));
-        customerList.add(new Customer(2, "john"));
+        customerList.add(new Customer(1, "FORZA ROMA"));
+        customerList.add(new Customer(2, "CIAO PIPPO"));
         return customerList;
     }
 }
