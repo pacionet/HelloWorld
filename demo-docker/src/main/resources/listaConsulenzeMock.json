@@ -1,0 +1,44 @@
+[
+  {
+    "version": "1",
+    "motoreConsulenza": "POM",
+    "dataAcquisizione": "string",
+    "id": "1",
+    "dataScadenza": "2020-05-22",
+    "stato": "APERTA",
+    "ndgRapportoIntestazione": "string",
+    "ndgCliente": "string",
+    "frazionario": "string",
+    "terminale": "string",
+    "userID": "string",
+    "cob": "string"
+  },
+   {
+    "version": "1",
+    "motoreConsulenza": "POM",
+    "dataAcquisizione": "string",
+    "id": "2",
+    "dataScadenza": "2020-05-23",
+    "stato": "CHIUSA",
+    "ndgRapportoIntestazione": "string",
+    "ndgCliente": "string",
+    "frazionario": "string",
+    "terminale": "string",
+    "userID": "string",
+    "cob": "string"
+  },
+   {
+    "version": "1",
+    "motoreConsulenza": "POM",
+    "dataAcquisizione": "string",
+    "id": "3",
+    "dataScadenza": "2020-05-24",
+    "stato": "ESEGUITA",
+    "ndgRapportoIntestazione": "string",
+    "ndgCliente": "string",
+    "frazionario": "string",
+    "terminale": "string",
+    "userID": "string",
+    "cob": "string"
+  }
+]
