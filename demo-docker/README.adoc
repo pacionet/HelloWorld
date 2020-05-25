@@ -1,3 +1,5 @@
-== Spring Boot with Docker
+### Docker Image build
 
-* Source code for tutorial: http://www.masterspringboot.com/cloud/docker/running-a-spring-boot-application-with-docker
+docker build -t listaconsulenze .
+
+docker rm "listaconsulenze" -f && docker run -e "SPRING_PROFILES_ACTIVE=COLL" --name=listaconsulenze -p 8080:8080 listaconsulenze

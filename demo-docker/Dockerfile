@@ -2,7 +2,7 @@
 FROM openjdk:8-jdk-alpine
 
 # Add Maintainer Info
-LABEL maintainer="pacionet@gmail.com"
+LABEL maintainer="andrea.pacini@nttdata.com"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
@@ -11,10 +11,13 @@ VOLUME /tmp
 EXPOSE 8080
 
 # The application's jar file
-ARG JAR_FILE=target/demo-docker-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/@project.artifactId@-@project.version@.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} demo-docker-0.0.1-SNAPSHOT.jar
+ADD ${JAR_FILE} @project.artifactId@-@project.version@.jar
+
+ADD config/application-COLL.properties application-COLL.properties
+ADD config/application-PROD.properties application-PROD.properties
 
 # Run the jar file
-ENTRYPOINT ["java","-jar","/demo-docker-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/@project.artifactId@-@project.version@.jar"]
